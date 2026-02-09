@@ -1,0 +1,109 @@
+.experience {
+  padding: 8rem 2rem;
+  background: var(--bg-primary);
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .header {
+    margin-bottom: 4rem;
+  }
+
+  .label {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+
+  .title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+  }
+
+  .timeline {
+    position: relative;
+    padding-left: 2rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.5rem;
+      width: 1px;
+      height: calc(100% - 1rem);
+      background: var(--glass-border);
+    }
+  }
+
+  .timeline-item {
+    position: relative;
+    padding-bottom: 2.5rem;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .timeline-dot {
+    position: absolute;
+    left: -2rem;
+    top: 0.5rem;
+    width: 7px;
+    height: 7px;
+    background: var(--text-tertiary);
+    border-radius: 50%;
+    transform: translateX(-3px);
+  }
+
+  .card {
+    padding-left: 0.5rem;
+  }
+
+  .card-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .period {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+  }
+
+  .company {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .card-description {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    padding: 4rem 1.5rem;
+
+    .timeline {
+      padding-left: 1.5rem;
+    }
+
+    .timeline-dot {
+      left: -1.5rem;
+    }
+  }
+}

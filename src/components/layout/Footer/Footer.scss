@@ -1,0 +1,84 @@
+.footer {
+  padding: 3rem 2rem;
+  background: var(--bg-primary);
+  border-top: 1px solid var(--glass-border);
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  .tagline {
+    font-size: 0.85rem;
+    color: var(--text-tertiary);
+  }
+
+  .links {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    a {
+      color: var(--text-tertiary);
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: var(--text-primary);
+      }
+    }
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    p {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+  }
+
+  .made-with {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+  }
+
+  .heart {
+    color: var(--text-tertiary);
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem 1.5rem;
+
+    .links {
+      gap: 1.5rem;
+    }
+  }
+}

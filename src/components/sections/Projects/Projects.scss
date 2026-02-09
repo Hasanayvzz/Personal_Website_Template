@@ -1,0 +1,152 @@
+.projects {
+  padding: 8rem 2rem;
+  background: var(--bg-primary);
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .header {
+    margin-bottom: 4rem;
+  }
+
+  .label {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+
+  .title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    color: var(--text-tertiary);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .project-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      border-color: var(--glass-border-hover);
+      transform: translateY(-2px);
+
+      .project-image {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    background: var(--bg-tertiary);
+  }
+
+  .project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .project-content {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .project-year {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+  }
+
+  .project-links {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .project-link {
+    color: var(--text-tertiary);
+    transition: color 0.2s ease;
+    padding: 0.25rem;
+
+    &:hover {
+      color: var(--text-primary);
+    }
+  }
+
+  .project-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex: 1;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+  }
+
+  .tag {
+    padding: 0.35rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    background: var(--bg-tertiary);
+    border-radius: 4px;
+    color: var(--text-tertiary);
+  }
+
+  @media (max-width: 768px) {
+    padding: 4rem 1.5rem;
+
+    .grid {
+      grid-template-columns: 1fr;
+    }
+
+    .image-container {
+      height: 200px;
+    }
+  }
+}

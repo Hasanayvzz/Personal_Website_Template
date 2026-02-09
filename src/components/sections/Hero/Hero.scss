@@ -1,0 +1,144 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: var(--bg-primary);
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .greeting {
+    font-size: 1rem;
+    color: var(--text-tertiary);
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+
+  .name {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+  }
+
+  .title {
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    font-weight: 400;
+    color: var(--text-secondary);
+    margin-top: -0.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    color: var(--text-tertiary);
+    max-width: 480px;
+    line-height: 1.7;
+  }
+
+  .cta {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .primary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.875rem 1.75rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      opacity: 0.85;
+      transform: translateY(-1px);
+    }
+  }
+
+  .secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.875rem 1.75rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid var(--glass-border);
+    border-radius: 4px;
+    background: transparent;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      border-color: var(--text-tertiary);
+      background: rgba(255, 255, 255, 0.03);
+    }
+  }
+
+  .social-links {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+  }
+
+  .social-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: var(--text-tertiary);
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--text-primary);
+    }
+  }
+
+  .scroll-indicator {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    letter-spacing: 0.15em;
+    text-transform: lowercase;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+
+    .cta {
+      flex-direction: column;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}

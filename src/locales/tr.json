@@ -1,0 +1,86 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "skills": "Yetenekler",
+    "projects": "Projeler",
+    "experience": "Deneyim",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "greeting": "Merhaba, Ben",
+    "name": "John Doe",
+    "title": "Full Stack Geliştirici",
+    "subtitle": "Erişilebilir, piksel mükemmelliğinde, performanslı ve harika web deneyimleri oluşturuyorum.",
+    "cta": "Projelerimi Gör",
+    "contact": "İletişime Geç"
+  },
+  "about": {
+    "title": "Hakkımda",
+    "bio": "Ölçeklenebilir ve kullanıcı odaklı uygulamalar geliştirmeye odaklanan tutkulu bir yazılım mühendisiyim. Modern web teknolojilerindeki uzmanlığımla karmaşık sorunları çözmeyi ve yüksek kaliteli çözümler sunmayı seviyorum.",
+    "bio2": "Kod yazmadığım zamanlarda yeni teknolojileri keşfederken, açık kaynağa katkıda bulunurken veya iyi bir kahvenin tadını çıkarırken bulabilirsiniz.",
+    "stats": {
+      "projects": "Proje",
+      "clients": "Müşteri",
+      "coffees": "Kahve",
+      "years": "Yıl Deneyim"
+    }
+  },
+  "skills": {
+    "title": "Yetenekler & Teknolojiler",
+    "subtitle": "Çalıştığım teknolojilerden bazıları:"
+  },
+  "projects": {
+    "title": "Öne Çıkan Projeler",
+    "subtitle": "Son çalışmalarımdan bir seçki.",
+    "ecommerce": {
+      "title": "E-Ticaret Platformu",
+      "description": "Gerçek zamanlı stok yönetimi, ödeme işlemleri ve analiz panosu içeren full-stack e-ticaret çözümü."
+    },
+    "taskapp": {
+      "title": "Görev Yönetimi Uygulaması",
+      "description": "Gerçek zamanlı güncellemeler, takım çalışma alanları ve entegre sohbet içeren işbirliği aracı."
+    },
+    "ai": {
+      "title": "AI İçerik Üreticisi",
+      "description": "Makaleler ve pazarlama metinleri üretmek için GPT-4 kullanan AI destekli içerik oluşturma platformu."
+    },
+    "realestate": {
+      "title": "Emlak Portalı",
+      "description": "Sanal turlar, kredi hesaplayıcı ve entegre CRM içeren emlak listeleme platformu."
+    }
+  },
+  "experience": {
+    "title": "Çalışma Geçmişim",
+    "techcorp": {
+      "title": "Kıdemli Full Stack Geliştirici",
+      "company": "Tech Corp",
+      "period": "2022 — Günümüz",
+      "description": "Ölçeklenebilir web uygulamalarının geliştirilmesine liderlik ediyorum. Genç geliştiricilere mentorluk yapıyor ve en iyi uygulamaları hayata geçiriyorum."
+    },
+    "digitalagency": {
+      "title": "Full Stack Geliştirici",
+      "company": "Digital Agency",
+      "period": "2020 — 2022",
+      "description": "Duyarlı web uygulamaları ve RESTful API'ler geliştirdim. Arayüzler üzerinde tasarım ekibiyle işbirliği yaptım."
+    },
+    "startup": {
+      "title": "Frontend Geliştirici",
+      "company": "Startup Inc",
+      "period": "2019 — 2020",
+      "description": "Etkileşimli kullanıcı arayüzleri geliştirdim. Uygulama performansını ve kullanıcı deneyimini optimize ettim."
+    }
+  },
+  "contact": {
+    "title": "İletişime Geç",
+    "subtitle": "Bir sorunuz mu var veya birlikte çalışmak mı istiyorsunuz?",
+    "name": "Ad",
+    "email": "E-posta",
+    "message": "Mesaj",
+    "send": "Mesajı Gönder"
+  },
+  "footer": {
+    "rights": "Tüm hakları saklıdır.",
+    "madeWith": "Next.js & Tailwind ile geliştirildi"
+  }
+}

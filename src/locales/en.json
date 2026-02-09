@@ -1,0 +1,86 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "John Doe",
+    "title": "Full Stack Developer",
+    "subtitle": "I build accessible, pixel-perfect, performant, and awesome web experiences.",
+    "cta": "View Work",
+    "contact": "Contact Me"
+  },
+  "about": {
+    "title": "About Me",
+    "bio": "I am a passionate software engineer with a focus on building scalable and user-centric applications. With expertise in modern web technologies, I love solving complex problems and delivering high-quality solutions.",
+    "bio2": "When I'm not coding, you can find me exploring new technologies, contributing to open source, or enjoying a good cup of coffee.",
+    "stats": {
+      "projects": "Projects",
+      "clients": "Clients",
+      "coffees": "Coffees",
+      "years": "Years Exp"
+    }
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "subtitle": "Here are some of the technologies I work with:"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "A selection of my recent work.",
+    "ecommerce": {
+      "title": "E-Commerce Platform",
+      "description": "Full-stack e-commerce solution with real-time inventory management, payment processing, and analytics dashboard."
+    },
+    "taskapp": {
+      "title": "Task Management App",
+      "description": "Collaborative project management tool with real-time updates, team workspaces, and integrated chat."
+    },
+    "ai": {
+      "title": "AI Content Generator",
+      "description": "AI-powered content creation platform using GPT-4 for generating articles and marketing copy."
+    },
+    "realestate": {
+      "title": "Real Estate Portal",
+      "description": "Property listing platform with virtual tours, mortgage calculator, and integrated CRM."
+    }
+  },
+  "experience": {
+    "title": "Where I've Worked",
+    "techcorp": {
+      "title": "Senior Full Stack Developer",
+      "company": "Tech Corp",
+      "period": "2022 — Present",
+      "description": "Leading development of scalable web applications. Mentoring junior developers and implementing best practices."
+    },
+    "digitalagency": {
+      "title": "Full Stack Developer",
+      "company": "Digital Agency",
+      "period": "2020 — 2022",
+      "description": "Built responsive web applications and RESTful APIs. Collaborated with design team on interfaces."
+    },
+    "startup": {
+      "title": "Frontend Developer",
+      "company": "Startup Inc",
+      "period": "2019 — 2020",
+      "description": "Developed interactive user interfaces. Optimized application performance and user experience."
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have a question or want to work together?",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "madeWith": "Built with Next.js & Tailwind"
+  }
+}

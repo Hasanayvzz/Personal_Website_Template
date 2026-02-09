@@ -1,0 +1,77 @@
+.star-field {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+
+  .star {
+    position: absolute;
+    background: var(--star-bg);
+    border-radius: 50%;
+    animation: twinkle infinite ease-in-out;
+  }
+
+  @keyframes twinkle {
+    0%,
+    100% {
+      opacity: 0.3;
+      transform: scale(0.8);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .shooting-star-wrapper {
+    position: absolute;
+    transform: rotate(40deg);
+    opacity: 0;
+    animation: shootingStarAnim 20s linear infinite;
+    animation-delay: var(--shoot-delay);
+  }
+
+  .shooting-star {
+    width: var(--star-length, 80px);
+    height: 1px;
+    background: var(--star-shoot-gradient);
+    border-radius: 50px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 3px;
+      height: 3px;
+      background: var(--star-shoot-head);
+      border-radius: 50%;
+      box-shadow: var(--star-shoot-shadow);
+    }
+  }
+
+  @keyframes shootingStarAnim {
+    0% {
+      opacity: 0;
+      transform: rotate(40deg) translateX(-20px);
+    }
+    2% {
+      opacity: 0.8;
+    }
+    8% {
+      opacity: 0.8;
+      transform: rotate(40deg) translateX(400px);
+    }
+    10% {
+      opacity: 0;
+      transform: rotate(40deg) translateX(500px);
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(40deg) translateX(500px);
+    }
+  }
+}
