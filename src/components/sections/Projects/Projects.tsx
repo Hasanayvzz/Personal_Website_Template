@@ -7,11 +7,6 @@ import Image from "next/image";
 import SectionHeader from "@/components/ui/SectionHeader/SectionHeader";
 import { useTranslation } from "@/hooks/useTranslation";
 
-const BASE_PATH =
-  process.env.NODE_ENV === "production"
-    ? process.env.NEXT_PUBLIC_BASE_PATH || ""
-    : "";
-
 const projects = [
   {
     id: "ecommerce",
@@ -71,7 +66,9 @@ export default function Projects() {
               transition={{ duration: 0.5, delay: index * 0.1 }}>
               <div className="image-container">
                 <Image
-                  src={`${BASE_PATH}${project.image}`}
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${
+                    project.image
+                  }`}
                   alt={t(`projects.${project.id}.title`)}
                   width={600}
                   height={300}
